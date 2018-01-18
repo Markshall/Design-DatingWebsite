@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Dating Website</title>
+		
+		<link type="text/css" rel="stylesheet" href="css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="css/global.css" />
+		<link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" />
+		<link type="text/css" rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+		
+		<!--
+		Coded by Mark Eriksson (http://mark-eriksson.com)
+		Original design by Salomon Aurélien (https://dribbble.com/shots/1489622-Social-website-WIP/attachments/223183)
+		-->
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-21727306-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-21727306-1');
+		</script>
+	</head>
+	
+	<body>
+		<div class="design-disclaimer" onclick="javascript:this.style.display='none';" style="box-sizing:border-box;top:0;left:0;position:fixed;width:100%;z-index:30;background-color: #eaeaea;text-align: center;padding: 16px;border-bottom: 2px solid #ccc;box-shadow: inset 0 -5px 11px -5px rgba(0,0,0,.3);font: 400 15px/1.6 'Helvetica Neue', Helvetica, Arial, sans-serif;color: #424140;cursor: pointer;">
+			Please be aware this is not a live project. It is a copy of a website by <a href="https://dribbble.com/shots/1489622-Social-website-WIP/attachments/223183" target="_blank" style="color: #2b2a2a;text-decoration: underline;">Salomon Aurélien</a> from Dribbble.com<br />Click to hide.
+		</div>
+	
+		
+		<div class="container clearfix">
+			<div id="left" class="pull-left">
+				<nav>
+					<div class="nav-item active">
+						<a href="#"><i class="fa fa-fw fa-user red"></i> Profile</a>
+					</div>
+					<div class="nav-item">
+						<a href="#" data-inner="meet"><i class="fa fa-fw fa-location-arrow orange"></i> Meet</a>
+						<div class="nav-inner" id="meet-inner">
+							<div class="select">
+								<select>
+									<option>MALES</option>
+									<option>FEMALES</option>
+									<option selected="selected">MALES &amp; FEMALES</option>
+								</select>
+								<i class="fa fa-caret-down"></i>
+							</div>
+
+							<div class="select">
+								<select>
+									<option>WITHIN 3 MILES</option>
+									<option>WITHIN 10 MILES</option>
+									<option selected="selected">ANY LOCATION</option>
+								</select>
+								<i class="fa fa-caret-down"></i>
+							</div>
+
+							<div class="select">
+								<select>
+									<option>18-25</option>
+									<option>26-32</option>
+									<option>33+</option>
+									<option selected="selected">ANY AGE</option>
+								</select>
+								<i class="fa fa-caret-down"></i>
+							</div>
+							
+							<div class="select clearfix select-padding">
+								<span class="pull-left">ADD FILTER</span>
+								<span class="pull-right"><i class="fa fa-plus"></i></span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="nav-item">
+						<a href="#"><i class="fa fa-fw fa-comments yellow"></i> Messages <span class="pull-right nav-badge">2</span></a>
+					</div>
+					
+					<div class="nav-item">
+						<a href="#" data-inner="members"><i class="fa fa-fw fa-users lime"></i> Featured members</a>
+						<div class="nav-inner" id="members-inner">
+							Put some content here if you like, links, images, whatever floats your boat!
+						</div>
+					</div>
+					
+					<div class="nav-item">
+						<a href="#"><i class="fa fa-fw fa-question green"></i> Anonymous Questions</a>
+					</div>
+					
+					<div class="nav-item">
+						<a href="#"><i class="fa fa-fw fa-eye turquoise"></i> Profile viewers</a>
+					</div>
+					
+					<div class="nav-item">
+						<a href="#"><i class="fa fa-fw fa-th-list blue"></i> Rating requests</a>
+					</div>
+				</nav>
+			</div>
+			
+			
+			
+			<div id="right" class="pull-left">
+				<header class="clearfix">
+					<h1 class="pull-left">Interested?</h1>
+					<div class="pull-right" id="interested-buttons">
+						<a href="#" class="interested-no">
+							<div class="top-half">
+								<i class="fa fa-fw fa-times"></i>
+							</div>
+							<div class="bottom-half">NO</div>
+						</a>
+						
+						<a href="#" class="interested-yes">
+							<div class="top-half">
+								<i class="fa fa-fw fa-heart"></i>
+							</div>
+							<div class="bottom-half">YES</div>
+						</a>
+					</div>
+				</header>
+				
+				<div id="user-profile" class="clearfix">
+					<div id="user-left" class="pull-left">
+						<section>
+							<div class="user-info">
+								<h3>Miranda <i class="fa fa-star"></i></h3>
+
+								<ul class="small-info">
+									<li><i class="fa fa-fw fa-user"></i> 28 years old</li>
+									<li><i class="fa fa-fw fa-map-marker"></i> 20 miles away</li>
+								</ul>
+								
+								<p class="activity">Active 1 hour ago</p>
+							</div>
+						</section>
+						
+						<section>
+							<div class="user-info">
+								<h4>ABOUT</h3>
+
+								<p>
+								    From England, love X, Y and Z.
+								</p>
+							</div>
+						</section>
+						
+						<section>
+							<div class="user-info">
+								<h4>FRIENDS IN COMMON</h3>
+
+								<p>
+									<a href="#"><img src="img/face1.jpg" alt="Common friend 1" class="small-face" /></a>
+									<a href="#"><img src="img/face2.jpg" alt="Common friend 2" class="small-face" /></a>
+									<a href="#"><img src="img/face3.jpg" alt="Common friend 3" class="small-face" /></a>
+									<a href="#"><img src="img/face4.jpg" alt="Common friend 4" class="small-face" /></a>
+								</p>
+							</div>
+						</section>
+						
+						<section>
+							<div class="user-info">
+								<h4>THINGS IN COMMON</h3>
+
+								<p>
+									Eminem, Oasis, Swedish House Mafia, Pharell Williams, Avicii and Ed Sheeran.
+								</p>
+							</div>
+						</section>
+					</div>
+					
+					<div id="user-right" class="pull-left">
+						<img src="img/miranda.png" alt="Miranda" class="profile-main-pic" />
+						
+						<div id="image-roll" class="image-roll clearfix">
+							<a href="#"><img src="img/image-roll/1.png" class="first" alt="Image roll pic 1" /></a>
+							<a href="#"><img src="img/image-roll/2.png" alt="Image roll pic 2" /></a>
+							<a href="#"><img src="img/image-roll/3.png" alt="Image roll pic 3" /></a>
+							<a href="#"><img src="img/image-roll/4.png" alt="Image roll pic 4" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			Layout coded with <i class="fa fa-heart"></i> by Mark Eriksson
+		</footer>
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+		<script>
+		$(function() {
+			
+			$('div.nav-item > a[data-inner]').on('click', function(e) {
+				e.preventDefault();
+				
+				var $inner = $('#' + $(this).data('inner') + '-inner');
+				var $item  = $(this).parent();
+				
+				if ($inner.css('display') === "none") {
+					$inner.slideDown();
+					$item.addClass('active');
+				} else {
+					$inner.slideUp();
+					$item.removeClass('active');
+				}
+			});
+			
+		});
+		</script>
+	</body>
+</html>
